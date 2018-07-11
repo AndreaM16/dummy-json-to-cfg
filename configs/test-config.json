@@ -1,0 +1,6 @@
+{
+  "some_par_1" : "some_val",
+  "some_par_2" : {
+    "some_nested_par" : "some_nested_val"
+  }
+}
