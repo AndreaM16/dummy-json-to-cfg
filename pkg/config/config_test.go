@@ -1,8 +1,11 @@
 package config
 
 import (
-	"testing"
 	"github.com/stretchr/testify/assert"
+	"path"
+	"path/filepath"
+	"runtime"
+	"testing"
 )
 
 type TestUnmarshalJsonFileType struct {
@@ -16,7 +19,11 @@ func TestUnmarshalJsonFile(t *testing.T) {
 
 	var out TestUnmarshalJsonFileType
 
-	filePath := "../../configs/test-config.json"
+	fileName := "../../configs/test-config.json"
+
+	_, dirName, _, _ := runtime.Caller(0)
+	filePath := path.Join(filepath.Dir(dirName), fileName)
+
 	someVal := "some_val"
 	someNestedVal := "some_nested_val"
 

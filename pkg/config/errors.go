@@ -11,5 +11,4 @@ const (
 	// ErrNoJsonExtensionFile is used when a string containing a file path
 	// does not contain `.json` extension
 	ErrNoJsonExtensionFile = "NoJsonExtensionFile"
-
 )
