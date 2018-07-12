@@ -9,6 +9,7 @@ import (
 	"runtime"
 )
 
+// Person is a simple test struct for this example
 type Person struct {
 	Name    string `json:"name"`
 	Surname string `json:"surname"`
